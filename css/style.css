@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+//***body {
+  background-color: #3031CF;
+}
+***//
+
+.container {
+  background-color: white;
+  height: 100vh;
+  margin: 0 auto;
+  width: 70rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+span {
+  content: "\27F6";
+}
+
+mark {
+  background-color: #DBA5A5;
+  height: 10%;
+}
+
+a:hover {
+  color: white;
+}
