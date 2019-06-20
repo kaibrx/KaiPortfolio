@@ -3,19 +3,99 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 14px;
+  font-family: Gill Sans, sans-serif;
 }
 
-//***body {
-  background-color: #3031CF;
+body {
+  background-color: white;
+  font-color: #6F6F6F;
 }
-***//
+
+nav a {
+  float: right;
+  font-family: Work Sans, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav {
+  width: auto;
+  padding-top: 60px;
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+header img {
+  width: 750px;
+  height: 500px;
+  float: right;
+  position: relative;
+}
+
+
+header div {
+  background: white;
+  width: 500px;
+  border: 20px solid white;
+  padding: 30px;
+  margin-top: 200px;
+  float: left;
+  position: absolute;
+}
+
+header h1 {
+  font-size: 25px;
+  font-kerning: 4%;
+  font-family: Josefin Sans;
+  padding-bottom: 15px;
+}
+
+header h4 {
+  color: #6F6F6F;
+  font-size: 18px;
+}
+
+.row {
+  float: left;
+  width: 25%;
+}
+
+.card1 {
+  font
+  width: 300px;
+  background: #F0F7FA;
+  padding: 10px;
+  margin: auto;
+}
+
+.card2 {
+  width: 300px;
+  background: #EFEFF2;
+  padding: 10px;
+  margin: auto;
+}
+
+footer {
+  font-family: Work Sans, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  border-top: .3px solid #C4C4C4;
+}
 
 .container {
   background-color: white;
   height: 100vh;
-  margin: 0 auto;
-  width: 70rem;
+  margin: auto;
+  width: 1000px;
 }
 
 p {
