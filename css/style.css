@@ -3,8 +3,9 @@
 }
 
 html {
-  font-size: 14px;
   font-family: Gill Sans, sans-serif;
+  font-size: 14px;
+  line-height: 10px;
 }
 
 body {
@@ -12,19 +13,46 @@ body {
   font-color: #6F6F6F;
 }
 
-nav a {
-  float: right;
-  font-family: Work Sans, sans-serif;
-  text-transform: uppercase;
-  color: black;
-  text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin-bottom: -50px;
+  min-height: 100%;
+}
+
+.main-container {
+  background-color: white;
+  margin: auto;
+  width: 1000px;
 }
 
 nav {
-  width: auto;
+  overflow: hidden;
   padding-top: 60px;
+  width: auto;
+}
+
+nav ul {
+  float:right;
+}
+
+nav li {
+  float: left;
+  padding-left: 35px;
+}
+
+nav li a {
+  color: black;
+  display: block;
+  float: left;
+  font-family: Work Sans, sans-serif;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav img {
@@ -33,73 +61,115 @@ nav img {
 }
 
 header img {
-  width: 750px;
-  height: 500px;
   float: right;
+  height: 500px;
   position: relative;
+  width: 750px;
 }
-
 
 header div {
   background: white;
-  width: 500px;
   border: 20px solid white;
-  padding: 30px;
   margin-top: 200px;
   float: left;
+  padding: 30px;
   position: absolute;
+  width: 500px;
 }
 
 header h1 {
-  font-size: 25px;
+  font-family: "Josefin Sans";
   font-kerning: 4%;
-  font-family: Josefin Sans;
+  font-size: 25px;
   padding-bottom: 15px;
 }
 
 header h4 {
   color: #6F6F6F;
+  font-kerning: 4%;
   font-size: 18px;
+  line-height: normal;
 }
 
 .row {
-  float: left;
-  width: 25%;
+  margin: 10px auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.row:after {
+  clear: both;
+  content:"";
+}
+
+.column {
+  color: #6F6F6F;
+  display: inline-block;
+  height: 700px;
+  margin: 10px;
+  padding-top: 90px;
+  width: 100%;
+}
+
+.column a {
+  color: #6F6F6F;
+  text-decoration: none;
+}
+
+.column p {
+  font-size: 16px;
+  padding: 15px;
 }
 
 .card1 {
-  font
-  width: 300px;
   background: #F0F7FA;
-  padding: 10px;
-  margin: auto;
+  float: left;
+  height: 500px;
+  position: relative;
+  text-align: left;
+  width: 450px;
+}
+
+.card1, .card2 h3 {
+  padding: 15px;
 }
 
 .card2 {
-  width: 300px;
   background: #EFEFF2;
-  padding: 10px;
-  margin: auto;
-}
-
-footer {
-  font-family: Work Sans, sans-serif;
-  text-transform: uppercase;
-  color: black;
-  font-size: 12px;
+  float: right;
+  height: 500px;
+  position: relative;
   text-align: center;
-  border-top: .3px solid #C4C4C4;
+  width: 450px;
 }
 
-.container {
-  background-color: white;
-  height: 100vh;
-  margin: auto;
-  width: 1000px;
+h3 {
+  font-size: 35px;
 }
 
-p {
-  font-size: 1.6rem;
+.card1 img {
+  bottom: 0;
+  display: block;
+  display: table-cell;
+  height: 370px;
+  padding: 0 5px 10px 10px;
+  position: absolute;
+  right: 0;
+}
+
+.card2 img {
+  display: block;
+  display: table-cell;
+  margin: 0 auto;
+}
+
+.card1 mark {
+  background-color: #B6D8E7;
+}
+
+.card2 mark {
+  background-color: #C4C4C4;
 }
 
 span {
@@ -107,10 +177,35 @@ span {
 }
 
 mark {
-  background-color: #DBA5A5;
-  height: 10%;
+  background-color: #ffcccc;
+  display: inline-block;
+  height: 6px;
+  line-height: 0px;
+  width: auto;
 }
 
 a:hover {
-  color: white;
+  text-decoration: line-through;
+}
+
+footer {
+  border-top: .3px solid #C4C4C4;
+  height: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  font-family: Work Sans, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer h3 {
+  font-family: Work Sans, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
 }
