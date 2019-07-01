@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/*all pages*/
 html {
   font-family: Gill Sans, sans-serif;
   font-size: 14px;
@@ -10,7 +11,6 @@ html {
 
 body {
   background-color: white;
-  font-color: #6F6F6F;
 }
 
 html, body {
@@ -19,12 +19,12 @@ html, body {
 }
 
 .container {
-  margin-bottom: -50px;
+  margin-bottom: 50px;
   min-height: 100%;
+  height: auto;
 }
 
 .main-container {
-  background-color: white;
   margin: auto;
   width: 1000px;
 }
@@ -60,14 +60,18 @@ nav img {
   width: auto;
 }
 
-header img {
+.homepage img, .contact img {
   float: right;
   height: 500px;
   position: relative;
   width: 750px;
 }
 
-header div {
+u {
+  text-decoration-color: #ffcccc;
+}
+
+.homepage div {
   background: white;
   border: 20px solid white;
   margin-top: 200px;
@@ -77,19 +81,105 @@ header div {
   width: 500px;
 }
 
-header h1 {
+div ul {
+  font-family: Work Sans, sans-serif;
+  text-indent: 10px;
+}
+
+div li {
+  color: #436B8D;
+  font-kerning: 3%;
+  text-decoration: none;
+}
+
+#clicked {
+  text-decoration: underline;
+  text-decoration-color: #ffcccc;
+}
+
+br {
+  line-height: 30px;
+}
+
+h1 {
   font-family: "Josefin Sans";
   font-kerning: 4%;
   font-size: 25px;
   padding-bottom: 15px;
 }
 
-header h4 {
+h3 {
+  font-size: 28px;
+  color: black;
+  font-family: josefin sans, sans-serif;
+}
+
+h4 {
   color: #6F6F6F;
   font-kerning: 4%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: normal;
+  margin: auto;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 75%;
 }
+
+span {
+  content: "\27F6";
+}
+
+mark {
+  background-color: #ffcccc;
+  display: inline-block;
+  height: 6px;
+  line-height: 0px;
+  width: auto;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #B6D8E7;
+  border-color: #B6D8E7;
+  border-radius: 2px;
+  display: block;
+  height: 25px;
+  margin: 15px auto;
+  width: auto;
+}
+
+button a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  border-top: .3px solid #C4C4C4;
+  height: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  font-family: Work Sans, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer h3 {
+  font-family: Work Sans, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/** index.html **/
 
 .row {
   margin: 10px auto;
@@ -144,10 +234,6 @@ header h4 {
   width: 450px;
 }
 
-h3 {
-  font-size: 35px;
-}
-
 .card1 img {
   bottom: 0;
   display: block;
@@ -164,48 +250,318 @@ h3 {
   margin: 0 auto;
 }
 
-.card1 mark {
-  background-color: #B6D8E7;
+.card2 h3 {
+  text-decoration: underline;
+  text-decoration-color: #C4C4C4;
 }
 
-.card2 mark {
-  background-color: #C4C4C4;
+/* biography.html */
+
+.bioheader h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15px;
 }
 
-span {
-  content: "\27F6";
+.bioheader img {
+  max-height: 600px;
+  max-width: 600px;
+  display: block;
+  margin: auto;
 }
 
-mark {
+.bio {
+  margin: auto;
+  width: 50%;
+}
+
+h2 {
+  color: #6F6F6F;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bio br {
+  line-height: 45px;
+}
+
+.bio button {
   background-color: #ffcccc;
+  border-color: #ffcccc;
+}
+
+/* project.html */
+
+.projectbackground p {
+  color: #6F6F6F;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.title h1, .card1 h3 {
+  text-decoration: underline;
+  text-decoration-color: #B6D8E7;
+}
+
+.allcards #clicked {
+  text-decoration: underline;
+  text-decoration-color: #B6D8E7;
+}
+
+.projectnav, .projectheader {
+ background: #F0F7FA;
+}
+
+.projectnav mark {
+  background-color: #ffcccc;
+}
+
+.projectheader h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.projectbackground {
+  background: #F0F7FA;
+  height: 650px;
+}
+
+.projectheader {
+  height: 540px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.projectheader div {
+  background: transparent;
+  bottom: 0;
+  clear: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 500px;
+}
+
+.projectheader img {
+  display: block;
+  max-height: 450px;
+  margin: auto;
+  width: 100%;
+}
+
+.allcards {
+  margin: 10px auto;
+  position: relative;
+}
+
+.allcards:after {
+  clear: both;
+  content:"";
+}
+
+.intro, .conclusion {
   display: inline-block;
-  height: 6px;
-  line-height: 0px;
-  width: auto;
-}
-
-a:hover {
-  text-decoration: line-through;
-}
-
-footer {
-  border-top: .3px solid #C4C4C4;
-  height: 50px;
-  padding-bottom: 30px;
   padding-top: 30px;
+}
+
+.intro div {
+  width: 60%;
+}
+
+.intro img {
+  display: inline-block;
+  display: table-cell;
+  float: right;
+  max-height: 450px;
+  max-width: 400px;
+  padding-top: 40px;
+  overflow: auto;
+}
+
+.secondary {
+  display: inline-block;
+  padding: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.analysis {
+  display: inline-block;
+  width: 55%;
+}
+
+.secondary img{
+  display: inline-block;
+  float: right;
+  max-height: 350px;
+  max-width: 350px;
+  padding-top: 150px;
+}
+
+.secondary h3 {
+  padding-bottom: 10px;
+}
+.secondary ul {
+  padding: 10px;
+  text-align: justify;
+}
+
+.secondary li {
+  letter-spacing: 1px;
+  line-height: 35px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.rightcard {
+  display: inline-block;
+  width: 40%;
+}
+
+.rightside {
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+
+.rightside img {
+  display: inline-block;
+  max-height: 550px;
+  max-width: 550px;
+  float: right;
+  padding-top: 20px;
+}
+
+.rightcard button {
+  display: inline-block;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.leftcard {
+  display: inline-block;
+  padding: 30px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+.leftcard img {
+  padding-top: 10px;
+  margin: auto;
+  max-height: 800px;
+  max-width: 800px;
+}
+
+.prototypes button {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.prototypes img {
+  display: inline-block;
+  margin: auto;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+}
+
+.research img {
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.centercard, .research, .prototypes {
+  display: inline-block;
+  padding: 30px;
   text-align: center;
 }
 
-footer a {
-  color: black;
-  font-family: Work Sans, sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  text-transform: uppercase;
+.centercard, .research p {
+  padding: 20px;
 }
 
-footer h3 {
-  font-family: Work Sans, sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
+.centercard img {
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 75%;
+}
+
+.background {
+  background-color: #F0F7FA;
+  display: inline-block;
+  height: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.background p, h4 {
+  padding-top: 10px;
+}
+
+.background img {
+  display: inline-block;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+.conclusion img {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+/* contact.html */
+
+.cb {
+  clear: none;
+  height: 600px;
+}
+
+.contactbox {
+  background: white;
+  border: 20px solid white;
+  margin-top: 150px;
+  float: left;
+  padding: 30px;
+  position: absolute;
+  width: 500px;
+}
+
+.contactbox input, .contactbox textarea {
+  width: 100%;
+}
+
+.contactbox h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactbox button {
+  background-color: white;
+  border-color: #ffcccc;
+}
+
+.contactbox button:hover {
+  text-decoration: line-through;
 }
