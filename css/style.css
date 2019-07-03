@@ -4,7 +4,7 @@
 
 /*all pages*/
 html {
-  font-family: Gill Sans, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 10px;
 }
@@ -32,23 +32,24 @@ html, body {
 nav {
   overflow: hidden;
   padding-top: 60px;
-  width: auto;
+  width: 100%;
 }
 
 nav ul {
   float:right;
+  width: 50%;
 }
 
 nav li {
   float: left;
-  padding-left: 35px;
+  padding-left: 60px;
 }
 
 nav li a {
   color: black;
   display: block;
   float: left;
-  font-family: Work Sans, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   list-style: none;
   text-align: center;
   text-decoration: none;
@@ -82,7 +83,7 @@ u {
 }
 
 div ul {
-  font-family: Work Sans, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-indent: 10px;
 }
 
@@ -102,16 +103,16 @@ br {
 }
 
 h1 {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans', sans-serif;
   font-kerning: 4%;
   font-size: 25px;
   padding-bottom: 15px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 35px;
   color: black;
-  font-family: josefin sans, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h4 {
@@ -127,7 +128,9 @@ h4 {
 
 span {
   content: "\27F6";
+  content: "\2193";
 }
+
 
 mark {
   background-color: #ffcccc;
@@ -167,14 +170,14 @@ footer {
 
 footer a {
   color: black;
-  font-family: Work Sans, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 footer h3 {
-  font-family: Work Sans, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -318,7 +321,7 @@ h2 {
 }
 
 .projectheader h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 70px;
   margin: auto;
   padding: 5px;
@@ -564,4 +567,20 @@ h2 {
 
 .contactbox button:hover {
   text-decoration: line-through;
+}
+
+/* media queries */
+
+/* tablet homepage */
+@media (max-width: 600px) {
+  p {
+    font-size: 2rem;
+  }
+  .card1, .card2 {
+    display: block;
+  }
+}
+
+@media (max-width: 250px) {
+
 }
