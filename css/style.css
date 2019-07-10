@@ -18,7 +18,7 @@ html, body {
   margin: 0;
 }
 
-.container {
+main, .container {
   margin-bottom: 50px;
   min-height: 100%;
   height: auto;
@@ -26,7 +26,7 @@ html, body {
 
 .main-container {
   margin: auto;
-  width: 1000px;
+  width: 80%;
 }
 
 nav {
@@ -69,7 +69,13 @@ nav img {
 }
 
 u {
+  text-decoration: underline;
   text-decoration-color: #ffcccc;
+}
+
+.allcards u {
+  text-decoration: underline;
+  text-decoration-color: #B6D8E7;
 }
 
 .homepage div {
@@ -89,14 +95,10 @@ div ul {
 
 div li {
   color: #436B8D;
-  font-kerning: 3%;
+  font-kerning: auto;
   text-decoration: none;
 }
 
-#clicked {
-  text-decoration: underline;
-  text-decoration-color: #ffcccc;
-}
 
 br {
   line-height: 30px;
@@ -104,7 +106,7 @@ br {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-kerning: 4%;
+  font-kerning: auto;
   font-size: 25px;
   padding-bottom: 15px;
 }
@@ -117,7 +119,7 @@ h3 {
 
 h4 {
   color: #6F6F6F;
-  font-kerning: 4%;
+  font-kerning: auto;
   font-size: 16px;
   line-height: normal;
   margin: auto;
@@ -130,7 +132,6 @@ span {
   content: "\27F6";
   content: "\2193";
 }
-
 
 mark {
   background-color: #ffcccc;
@@ -307,10 +308,6 @@ h2 {
   text-decoration-color: #B6D8E7;
 }
 
-.allcards #clicked {
-  text-decoration: underline;
-  text-decoration-color: #B6D8E7;
-}
 
 .projectnav, .projectheader {
  background: #F0F7FA;
@@ -567,20 +564,4 @@ h2 {
 
 .contactbox button:hover {
   text-decoration: line-through;
-}
-
-/* media queries */
-
-/* tablet homepage */
-@media (max-width: 600px) {
-  p {
-    font-size: 2rem;
-  }
-  .card1, .card2 {
-    display: block;
-  }
-}
-
-@media (max-width: 250px) {
-
 }
