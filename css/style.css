@@ -78,7 +78,7 @@ u {
   text-decoration-color: #B6D8E7;
 }
 
-.homepage div {
+.homepage div{
   background: white;
   border: 20px solid white;
   margin-top: 200px;
@@ -97,11 +97,6 @@ div li {
   color: #436B8D;
   font-kerning: auto;
   text-decoration: none;
-}
-
-
-br {
-  line-height: 30px;
 }
 
 h1 {
@@ -149,10 +144,9 @@ button {
   background-color: #B6D8E7;
   border-color: #B6D8E7;
   border-radius: 2px;
-  display: block;
+  display: inline-block;
   height: 25px;
   margin: 15px auto;
-  width: auto;
 }
 
 button a {
@@ -162,28 +156,37 @@ button a {
 
 footer {
   clear: both;
-  border-top: .3px solid #C4C4C4;
+  border-top: .2px solid #C4C4C4;
   height: 50px;
-  padding-bottom: 30px;
-  padding-top: 30px;
   text-align: center;
 }
 
 footer a {
   color: black;
   font-family: 'Work Sans', sans-serif;
-  font-size: 12px;
+  padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+footer li {
+  padding: 10px;
+}
+
 footer h3 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 20px;
   text-transform: uppercase;
 }
 
 /** index.html **/
+
+.homepage h2 {
+  color: #6F6F6F;
+  font-size: 16px;
+  line-height: normal;
+}
 
 .row {
   margin: 10px auto;
@@ -279,17 +282,15 @@ footer h3 {
   width: 50%;
 }
 
-h2 {
+.bio p {
   color: #6F6F6F;
   font-size: 16px;
   line-height: 20px;
+  margin: 15px;
+  text-align: justify;
 }
 
-.bio br {
-  line-height: 45px;
-}
-
-.bio button {
+.bio button, .contactbox button {
   background-color: #ffcccc;
   border-color: #ffcccc;
 }
@@ -303,27 +304,26 @@ h2 {
   padding-top: 10px;
 }
 
-.title h1, .card1 h3 {
+.allcards h1, .card1 h3 {
   text-decoration: underline;
   text-decoration-color: #B6D8E7;
 }
 
-
+}
 .projectnav, .projectheader {
  background: #F0F7FA;
 }
 
-.projectnav mark {
-  background-color: #ffcccc;
-}
-
-.projectheader h1 {
+.allcards h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 70px;
   margin: auto;
   padding: 5px;
-  text-align: center;
   width: 50%;
+}
+
+.title {
+  text-align: center;
 }
 
 .projectbackground {
@@ -332,35 +332,23 @@ h2 {
 }
 
 .projectheader {
-  height: 540px;
+  height: 500px;
   margin: 0;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 
-.projectheader div {
-  background: transparent;
-  bottom: 0;
-  clear: none;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width: 500px;
-}
-
 .projectheader img {
   display: block;
-  max-height: 450px;
+  height: 100%;
   margin: auto;
-  width: 100%;
+  padding-bottom: 40px;
 }
 
 .allcards {
   margin: 10px auto;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -369,13 +357,13 @@ h2 {
   content:"";
 }
 
-.intro, .conclusion {
+.intro {
   display: inline-block;
   padding-top: 30px;
 }
 
 .intro div {
-  width: 60%;
+  width: 45%;
 }
 
 .intro img {
@@ -397,20 +385,21 @@ h2 {
 
 .analysis {
   display: inline-block;
-  width: 55%;
+  width: 40%;
 }
 
 .secondary img{
   display: inline-block;
   float: right;
   max-height: 350px;
-  max-width: 350px;
+  width: 350px;
   padding-top: 150px;
 }
 
 .secondary h3 {
   padding-bottom: 10px;
 }
+
 .secondary ul {
   padding: 10px;
   text-align: justify;
@@ -442,10 +431,6 @@ h2 {
   padding-top: 20px;
 }
 
-.rightcard button {
-  display: inline-block;
-}
-
 .bold {
   font-weight: 600;
 }
@@ -464,7 +449,12 @@ h2 {
   max-width: 800px;
 }
 
-.prototypes button {
+.prototypes p, .centercard p {
+  margin: auto;
+  width: 60%;
+}
+
+.prototypes button, .background button {
   display: block;
   margin: auto;
   margin-bottom: 10px;
@@ -487,7 +477,13 @@ h2 {
   width: 50%;
 }
 
-.centercard, .research, .prototypes {
+.research {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.centercard, .prototypes {
   display: inline-block;
   padding: 30px;
   text-align: center;
@@ -514,7 +510,9 @@ h2 {
 }
 
 .background p, h4 {
+  margin: auto;
   padding-top: 10px;
+  width: 60%;
 }
 
 .background img {
@@ -525,11 +523,23 @@ h2 {
   padding-top: 20px;
 }
 
-.conclusion img {
-  display: block;
+.conclusion {
   margin: auto;
-  width: 70%;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
 }
+
+.conclusion p {
+  line-height: 20px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.conclusion img {
+  width: 100%;
+}
+
 
 /* contact.html */
 
@@ -540,26 +550,32 @@ h2 {
 
 .contactbox {
   background: white;
-  border: 20px solid white;
-  margin-top: 150px;
+  border: 10px solid white;
+  margin-top: 130px;
   float: left;
   padding: 30px;
   position: absolute;
   width: 500px;
 }
 
-.contactbox input, .contactbox textarea {
+input, textarea {
+  border: .5px solid #ccc;
+  border-radius: 2px;
+  padding: 5px;
+  -webkit-border-radius: 2px;
   width: 100%;
 }
 
 .contactbox h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.contactbox button {
-  background-color: white;
-  border-color: #ffcccc;
+.contactbox button, .bio button {
+  display: block;
+
 }
 
 .contactbox button:hover {
