@@ -61,7 +61,16 @@ nav img {
   width: auto;
 }
 
+.title div {
+  width: 60%;
+}
+
+.title {
+  text-align: center;
+}
+
 .homepage img, .contact img {
+  display: block;
   float: right;
   height: 500px;
   position: relative;
@@ -81,6 +90,7 @@ u {
 .homepage div{
   background: white;
   border: 20px solid white;
+  display: block;
   margin-top: 200px;
   float: left;
   padding: 30px;
@@ -322,7 +332,7 @@ footer h3 {
   width: 50%;
 }
 
-.title {
+. {
   text-align: center;
 }
 
@@ -580,4 +590,410 @@ input, textarea {
 
 .contactbox button:hover {
   text-decoration: line-through;
+}
+
+/* responsive design */
+@media only screen and (max-width: 1163px) {
+
+  .main-container {
+    margin: auto;
+    width: 80%;
+  }
+
+  nav ul {
+    width: 475px;
+  }
+
+  .row {
+    height: 1210px;
+  }
+
+  .card1, .card2 {
+    height: 400px
+    width: 350px;
+  }
+
+  .card1 img {
+    height: 370px;
+    width: auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 1126px) {
+  /* HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE */
+  .row {
+    height: 1210px;
+  }
+
+  .card1, .card2 {
+    height: 300px
+    width: 200px;
+  }
+
+  .card1 img, .card2 img {
+    height: 200px;
+    width: auto;
+  }
+
+}
+
+
+
+/* small laptop */
+@media only screen and (max-width: 1024px) {
+
+/* HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE */
+
+nav {
+  font-size: 12px;
+}
+
+.homepage div {
+  float: left;
+  display: block;
+  margin-top: 200px;
+  width: 500px;
+}
+
+.homepage img {
+  display: block;
+  float: right;
+  padding-top: 30px;
+  width: 700px;
+}
+
+.row {
+  height: auto;
+}
+
+.card1, .card2 {
+  height: 400px;
+  width: 350px;
+}
+
+.card1 img {
+  height: 250px;
+  width: auto;
+}
+
+.card2 img {
+  height: 250px;
+  margin-top: 10px;
+  width: auto;
+}
+
+/* ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
+
+.bioheader img {
+  width: 500px;
+}
+
+.bio {
+  width: 60%;
+}
+
+footer {
+  font-size: 12px;
+}
+footer h3 {
+  font-size: 14px;
+}
+
+/* PROJECT PROJECT PROJECT PROJECT  PROJECT PROJECT PROJECT PROJECT PROJECT*/
+
+.projectbackground{
+  height: 530px;
+}
+
+.allcards {
+  padding-top: 2px;
+}
+
+.allcards h1 {
+  font-size: 60px
+}
+
+.allcards h1, .allcards h4 {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h4 {
+  width: 80%;
+}
+
+.projectheader img {
+  height: 80%;
+  margin: auto;
+}
+
+h4 {
+  width: 90%;
+}
+
+.intro {
+  padding-bottom: 40px;
+}
+
+.intro div {
+  width: 55%;
+}
+
+.intro img {
+  margin-top: 80px;
+  width: 40%;
+}
+
+.leftcard {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+.leftcard img {
+  margin: auto;
+  width: 600px;
+}
+
+.analysis {
+  display: inline-block;
+  width: 50%;
+}
+
+.secondary img {
+  display: inline-block;
+  float: right;
+  margin-top: 140px;
+  width: 330px;
+}
+
+.centercard p, .prototypes p, .intro p {
+  width: 100%;
+}
+
+.rightside div {
+  width: 80%;
+}
+
+.rightside img {
+  display: block;
+  float: none;
+  margin: auto;
+  width: 500px;
+}
+
+.rightcard img {
+  margin: auto;
+}
+
+.centercard p, .background p, .conclusion, .prototypes p {
+  width: 75%;
+}
+
+.centercard img {
+  width: 70%;
+}
+
+.prototypes img {
+  width: auto;
+}
+
+.background ul {
+  list-style: circle;
+  list-style-position: inside;
+  margin: auto;
+  padding-top: 15px;
+  text-align: justify;
+  width: 40%;
+}
+
+
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 80%;
+  }
+
+/* HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE */
+  nav ul {
+    padding-left: 230px;
+    font-size: 11px;
+    width: 100%;
+  }
+
+  nav li {
+    padding-left: 45px;
+  }
+
+  nav img {
+    height: 40px;
+  }
+
+  .column p, .column a {
+    font-size: 12px;
+  }
+  .column {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .homepage div {
+    float: left;
+    display: block;
+    margin-top: 130px;
+    width: 450px;
+  }
+
+  .homepage h1 {
+    font-size: 18px;
+  }
+
+  .homepage h2 {
+    font-size: 14px;
+  }
+
+  .homepage img {
+    display: block;
+    float: right;
+    height: auto;
+    padding-top: 30px;
+    width: 80%;
+  }
+
+  .card1, .card2 {
+    height: 320px;
+    width: 250px;
+  }
+
+  .card1 img {
+    height: 170px;
+    width: auto;
+  }
+
+  .card2 img {
+    height: 170px;
+    margin-top: 0;
+  }
+
+  /* ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
+
+  .bioheader img {
+    width: 450px;
+  }
+
+  .bio {
+    width: 70%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+  footer h3 {
+    font-size: 14px;
+  }
+
+/* PROJECT PROJECT PROJECT PROJECT  PROJECT PROJECT PROJECT PROJECT PROJECT*/
+
+  .projectbackground{
+    height: 550px;
+  }
+
+  .allcards {
+    padding-top: 5px;
+  }
+
+  .allcards div {
+    width: 100%;
+  }
+
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h4 {
+    text-align: center;
+    width: 90%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .projectheader img {
+    height: 80%;
+    margin: auto;
+  }
+
+  .intro {
+    padding-bottom: 40px;
+  }
+
+  .intro div {
+    width: 60%;
+  }
+
+  .intro img {
+    width: 40%;
+  }
+
+  .analysis {
+    display: block;
+    width: 100%;
+  }
+
+  .secondary img {
+    display: block;
+    float: none;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .leftcard {
+    display: block;
+  }
+
+  .leftcard img {
+    width: 500px;
+  }
+
+  .centercard p, .prototypes p, .intro p, .centercard img {
+    width: 100%;
+  }
+
+  .rightside img {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 500px;
+  }
+
+  .prototypes img {
+    width: 55%;
+  }
+  .background p, h4 {
+    width: 100%;
+  }
+
+  .background ul {
+    list-style: circle;
+    list-style-position: inside;
+    margin: auto;
+    padding-top: 15px;
+    text-align: justify;
+    width: 60%;
+  }
+
+
 }
