@@ -595,6 +595,11 @@ input, textarea {
 /* desktop */
 @media only screen and (max-width: 1281px) {
 
+  nav ul{
+    float: right;
+
+  }
+
   .card1, .card2 {
     height: 550px;
     width: 450px;
@@ -624,7 +629,7 @@ input, textarea {
   nav ul {
     padding-left: 230px;
     font-size: 11px;
-    width: 90%;
+    width: 100%;
   }
 
   nav li {
@@ -657,7 +662,7 @@ input, textarea {
     font-size: 16px;
   }
 
-  .homepage img {
+  .homepage img, .contact img {
     display: block;
     float: right;
     height: auto;
@@ -803,5 +808,14 @@ input, textarea {
     width: 65%;
   }
 
+  /* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
 
+  .contactbox {
+    height: 300px;
+    width: 450px;
+  }
+
+  .contactbox h1 {
+    font-size: 25px;
+  }
 }
