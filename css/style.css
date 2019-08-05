@@ -597,7 +597,6 @@ input, textarea {
 
   nav ul{
     float: right;
-
   }
 
   .card1, .card2 {
@@ -620,7 +619,7 @@ input, textarea {
 
 
 /* tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
   .main-container {
     width: 90%;
   }
@@ -817,5 +816,12 @@ input, textarea {
 
   .contactbox h1 {
     font-size: 25px;
+  }
+
+  @media only screen and (max-width: 415px) {
+    .contactbox {
+      width: 300px;
+    }
+
   }
 }
