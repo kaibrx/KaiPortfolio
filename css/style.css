@@ -48,7 +48,6 @@ nav li {
 nav li a {
   color: black;
   display: block;
-  float: left;
   font-family: 'Work Sans', sans-serif;
   list-style: none;
   text-align: center;
@@ -73,8 +72,9 @@ nav img {
   display: block;
   float: right;
   height: 500px;
+  padding-top: 20px;
   position: relative;
-  width: 750px;
+  width: 800px;
 }
 
 u {
@@ -136,14 +136,6 @@ h4 {
 span {
   content: "\27F6";
   content: "\2193";
-}
-
-mark {
-  background-color: #ffcccc;
-  display: inline-block;
-  height: 6px;
-  line-height: 0px;
-  width: auto;
 }
 
 a:hover {
@@ -243,7 +235,7 @@ footer h3 {
 }
 
 .card2 {
-  background: #EFEFF2;
+  background: #F7EFEC;
   float: right;
   height: 500px;
   position: relative;
@@ -252,14 +244,12 @@ footer h3 {
 }
 
 .card1 img {
-  bottom: 0;
   display: block;
-  display: table-cell;
-  height: 370px;
-  padding: 0 5px 10px 10px;
-  position: absolute;
-  right: 0;
+  margin: auto;
+  margin-top: 100px;
+  max-height: 45%;
 }
+
 
 .card2 img {
   display: block;
@@ -269,7 +259,7 @@ footer h3 {
 
 .card2 h3 {
   text-decoration: underline;
-  text-decoration-color: #C4C4C4;
+  text-decoration-color: #ECC9BC;
 }
 
 /* biography.html */
@@ -351,9 +341,12 @@ footer h3 {
 
 .projectheader img {
   display: block;
-  height: 100%;
-  margin: auto;
-  padding-bottom: 40px;
+  max-height: 60%;
+  padding-top: 10px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .allcards {
@@ -418,7 +411,7 @@ footer h3 {
 .secondary li {
   letter-spacing: 1px;
   line-height: 35px;
-  list-style: disc;
+  list-style:  initial;
   list-style-position: inside;
 }
 
@@ -428,18 +421,13 @@ footer h3 {
 }
 
 .rightside {
+  display: inline-block;
   padding-bottom: 40px;
   padding-left: 30px;
   padding-top: 40px;
 }
 
-.rightside img {
-  display: inline-block;
-  max-height: 550px;
-  max-width: 550px;
-  float: right;
-  padding-top: 20px;
-}
+.rightside ul {}
 
 .bold {
   font-weight: 600;
@@ -457,6 +445,77 @@ footer h3 {
   margin: auto;
   max-height: 800px;
   max-width: 800px;
+}
+
+.userpersonas div {
+  margin-bottom: 30px;
+}
+.personagroup div {
+  border: solid .5px #C4C4C4;
+  border-radius: 4px;
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+}
+
+.personagroup {
+  margin: auto;
+  width: 80%;
+}
+.persona1 {
+  float: left;
+}
+
+.persona2 {
+  float: right;
+}
+
+.persona1 img, .persona2 img {
+  display: block;
+  margin: auto;
+  width: 160px;
+  padding: 10px;
+}
+
+.persona1 h2, .persona2 h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.userpersonas h3 {
+  padding: 20px;
+}
+
+.persona1 h4, .persona2 h4 {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.persona1 h5, .persona2 h5 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.userpersonas li {
+  color: black;
+  line-height: 30px;
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 16px;
+}
+
+.userpersonas ul {
+  padding-top: 10px;
+}
+
+.persona1, .persona2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prototypes p, .centercard p {
@@ -592,12 +651,308 @@ input, textarea {
   text-decoration: line-through;
 }
 
-/* desktop */
-@media only screen and (max-width: 1281px) {
+/* Project list */
+.listheader h3 {
+  text-align: left;
+  margin-top: 60px;
+}
 
-  nav ul{
-    float: right;
-  }
+/* HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML *
+
+.hcprojectbackground {
+  background: #F7EFEC;
+  height: 650px;
+}
+
+.hcallcards h1 {
+  text-decoration: underline;
+  text-decoration-color: #ECC9BC;
+}
+
+.hcallcards u {
+  text-decoration: underline;
+  text-decoration-color: #ECC9BC;
+}
+
+}
+.projectnav, .projectheader {
+ background: #F0F7FA;
+}
+
+.allcards h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 70px;
+  margin: auto;
+  padding: 5px;
+  width: 50%;
+}
+
+. {
+  text-align: center;
+}
+
+.projectbackground {
+  background: #F0F7FA;
+  height: 650px;
+}
+
+.projectheader {
+  height: 500px;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.projectheader img {
+  display: block;
+  max-height: 70%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.hcallcards {
+  margin: 10px auto;
+  padding-top: 80px;
+  position: relative;
+}
+
+.hcallcards:after {
+  clear: both;
+  content:"";
+}
+
+.intro {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.intro div {
+  width: 45%;
+}
+
+.intro img {
+  display: inline-block;
+  display: table-cell;
+  float: right;
+  max-height: 450px;
+  max-width: 400px;
+  padding-top: 40px;
+  overflow: auto;
+}
+
+.secondary {
+  display: inline-block;
+  padding: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.analysis {
+  display: inline-block;
+  width: 40%;
+}
+
+.secondary img{
+  display: inline-block;
+  float: right;
+  max-height: 350px;
+  width: 350px;
+  padding-top: 150px;
+}
+
+.hcitalic {
+  font-style: italic;
+  font-size: 16px;
+  list-style-position:
+}
+
+.hcallcards li {
+  color: #7E7673;
+}
+
+.secondary h3 {
+  padding-bottom: 10px;
+}
+
+.secondary ul {
+  padding: 10px;
+  text-align: justify;
+}
+
+.secondary li {
+  letter-spacing: 1px;
+  line-height: 35px;
+  list-style:  initial;
+  list-style-position: inside;
+}
+
+.rightcard {
+  display: inline-block;
+  width: 40%;
+}
+
+.rightside {
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.leftcard {
+  display: inline-block;
+  padding: 30px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+.leftcard img {
+  padding-top: 10px;
+  margin: auto;
+  max-height: 800px;
+  max-width: 800px;
+}
+
+.prototypes p, .centercard p {
+  margin: auto;
+  width: 60%;
+}
+
+.prototypes button, .background button {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.prototypes img {
+  display: inline-block;
+  margin: auto;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+}
+
+.research img {
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.research {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.centercard, .prototypes {
+  display: inline-block;
+  padding: 30px;
+  text-align: center;
+}
+
+.centercard, .research p {
+  padding: 20px;
+}
+
+.centercard img {
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 75%;
+}
+
+.hcbackground {
+  background-color: #F7EFEC;
+  display: inline-block;
+  height: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.background p, h4 {
+  margin: auto;
+  padding-top: 10px;
+  width: 60%;
+}
+
+.background img {
+  display: inline-block;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+.conclusion {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+.conclusion p {
+  line-height: 20px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.conclusion img {
+  width: 100%;
+}
+
+*/
+
+/* contact.html */
+
+.cb {
+  clear: none;
+  height: 600px;
+}
+
+.contactbox {
+  background: white;
+  border: 10px solid white;
+  margin-top: 130px;
+  float: left;
+  padding: 30px;
+  position: absolute;
+  width: 500px;
+}
+
+input, textarea {
+  border: .5px solid #ccc;
+  border-radius: 2px;
+  padding: 5px;
+  -webkit-border-radius: 2px;
+  width: 100%;
+}
+
+.contactbox h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactbox button, .bio button {
+  display: block;
+
+}
+
+.contactbox button:hover {
+  text-decoration: line-through;
+}
+
+/* desktop */
+@media only screen and (min-width: 1281px) {
 
   .card1, .card2 {
     height: 550px;
@@ -616,10 +971,16 @@ input, textarea {
 
 }
 
-
+/* tablet in between */
+@media only screen and (min-width: 768px) and (max-width: 1281px) {
+  .card2 img {
+    height: 300px;
+    margin-top: 60px;
+  }
+}
 
 /* tablet */
-@media only screen and (min-width: 415px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .main-container {
     width: 90%;
   }
@@ -627,7 +988,7 @@ input, textarea {
 /* HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE */
   nav ul {
     padding-left: 230px;
-    font-size: 11px;
+    font-size: 12px;
     width: 100%;
   }
 
@@ -650,23 +1011,17 @@ input, textarea {
   .homepage div {
     float: left;
     display: block;
-    width: 450px;
+    width: 500px;
   }
 
   .homepage h1 {
     font-size: 20px;
   }
 
-  .homepage h2 {
-    font-size: 16px;
-  }
-
   .homepage img, .contact img {
-    display: block;
-    float: right;
-    height: auto;
+    height: 450px;
     padding-top: 30px;
-    width: 80%;
+    width: 500px;
   }
 
   .card1, .card2 {
@@ -675,7 +1030,7 @@ input, textarea {
     margin: auto;
     margin-top: 20px;
     height: 550px;
-    width: 500px;
+    width: 80%;
   }
 
   .card1 img {
@@ -738,8 +1093,10 @@ input, textarea {
   }
 
   .projectheader img {
-    height: 80%;
+    display: block;
+    max-height: 100%;
     margin: auto;
+    padding-top: 20px;
   }
 
   .intro {
@@ -774,15 +1131,18 @@ input, textarea {
     width: 500px;
   }
 
-  .centercard p, .prototypes p, .intro p, .centercard img, .rightside p {
-    width: 80%;
-  }
-
-  .rightside img {
+  .personagroup div {
     display: block;
     float: none;
-    margin: auto;
-    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 60%;
+  }
+
+  .centercard p, .prototypes p, .intro p, .centercard img, .rightside p {
+    width: 80%;
   }
 
   .prototypes img {
@@ -818,10 +1178,198 @@ input, textarea {
     font-size: 25px;
   }
 
-  @media only screen and (max-width: 415px) {
-    .contactbox {
+/*mobile*/
+@media only screen and (min-width: 320px) and (max-width: 415px){
+
+    .main-container {
+      width: 90%;
+    }
+
+    .column {
+      padding-top: 100px;
+    }
+
+    header {
+      width: 100%;
+    }
+
+    nav ul {
+      padding-left: 80px;
+      font-size: 12px;
+      width: 100%;
+    }
+
+    nav li {
+      line-height: 20px;
+      padding-left: 30px;
+    }
+
+    nav img {
+      height: 25px;
+    }
+
+    .bio p {
+      margin: auto;
+      text-align: left;
+      line-height: 25px;
       width: 300px;
     }
 
+    .homepage img, .contact img {
+      height: 310px;
+      margin: auto;
+      width: 300px;
+    }
+
+    .homepage div {
+      margin-top: 100px;
+      margin-right: 0;
+      padding: 10px;
+      width: 90%;
+    }
+
+    .homepage h1 {
+      font-size: 18px;
+    }
+
+    .homepage h2 {
+      font-size: 14px;
+    }
+
+    .card1, .card2 {
+      max-height: 400px;
+      width: 90%;
+    }
+
+    .card1 img {
+      margin-top: 80px;
+      max-height: 35%;
+    }
+
+     .card2 img {
+      height: 50%;
+      margin-top: 55px;
+    }
+
+    .column {
+      height: auto;
+    }
+    /*PROJECT*/
+    .projectheader img {
+      max-height: 49%;
+      margin: auto;
+      padding-top: 20px;
+    }
+
+    .projectbackground {
+      height: 300px;
+      width: auto;
+    }
+
+    .projectheader {
+      height: 250px;
+      margin-bottom: 1px;
+      padding-top: 40px;
+    }
+
+    .title h1 {
+      font-size: 40px;
+    }
+
+    .title h4 {
+      text-align: center;
+    }
+
+    .allcards p {
+      text-align: left;
+      width: 100%;
+    }
+
+    .allcards li {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      list-style: initial;
+      list-style-position: inside;
+    }
+
+    .allcards ul {
+      width: 100%;
+    }
+
+    .intro div {
+      width: 100%;
+    }
+
+
+    .leftcard {
+      width: 100%;
+    }
+
+    .leftcard img {
+      width: 100%;
+    }
+
+    .personagroup div {
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+    }
+
+    .research img {
+      width: 250px;
+    }
+
+    .secondary ul {
+      width: 100%;
+    }
+
+    .secondary li {
+      line-height: 30px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .secondary img {
+      width: 300px;
+    }
+
+    .background img {
+      width: 200px;
+    }
+
+    .prototypes img {
+      width: 100%;
+    }
+
+    /*ABOUT*/
+    .bioheader img {
+      height: 250px;
+      width: auto;
+    }
+
+    .bioheader h1 {
+      font-size: 24px;
+    }
+
+    .bio p {
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      padding-top: 10px;
+      padding-bottom: 80px;
+      width: 100%;
+    }
   }
+
+  @media only screen and (max-width: 415px) {
+      .contactbox {
+        width: 300px;
+      }
+    }
 }
