@@ -523,6 +523,10 @@ footer h3 {
   width: 60%;
 }
 
+.centercard button, .rightside button {
+  display: block;
+}
+
 .prototypes button, .background button {
   display: block;
   margin: auto;
