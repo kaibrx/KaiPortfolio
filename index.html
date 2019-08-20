@@ -12,26 +12,34 @@
     <main>
       <section class="main-container">
         <nav>
-          <ul>
-            <li>
-              <a href="index.html" target="_blank"><u>Home</u></a>
-            </li>
-            <li>
-              <a href="/project.html" target="_blank">Projects</a>
-            </li>
-            <li>
-              <a href="/biography.html" target="_blank">About</a>
-            </li>
-            <li>
-              <a href="/contact.html" target="_blank">Contact</a>
-            </li>
-          </ul>
+          <nav role='navigation'>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li>
+                <a href="index.html" target="_blank"><u>Home</u></a>
+              </li>
+              <li>
+                <a href="/project.html" target="_blank">Projects</a>
+              </li>
+              <li>
+                <a href="/biography.html" target="_blank">About</a>
+              </li>
+              <li>
+                <a href="/contact.html" target="_blank">Contact</a>
+              </li>
+            </ul>
+          </div>
           <a href="/index.html" target="_blank"><img src="images/kbfinal.png" alt="Personal Logo"/></a>
         </nav>
           <header class="homepage">
             <img src="images/beachpic.png" alt="Beach Sunset"/>
             <div>
-            <h1>I’m <u>Kai Brooks</u>, a UX Designer from Atlanta. I am passionate about designing for social good.</h1>
+            <h3><u>Kai Brooks</u></h3>
+            <h1>Atlanta based UX Designer passionate about designing for social good.</h1>
             <h2>I am a recent college graduate with experience in the global non profit humanitarian industry.</h2>
             </div>
           </header>
@@ -43,13 +51,13 @@
                 <h3>Aerial</h3>
                 <p>Aerial is a cloud based storage app versatile for work and personal file needs.</p>
                 <span>&#10230;</span>
-                <a href="/aerial.html"  target="_blank">View Case Study</a>
+                <a href="/aerial.html" target="_blank">View Case Study</a>
                 <img src="images/aerialscreenmock.png" alt="Aerial Laptop Screen"/>
               </div>
               <div class="card2">
                 <h3>Happy Carrot</h3>
                 <p>Happy Carrot is an all in one plant-based recipe app.</p>
-                <span>&#8595;</span> <br>
+                <span class="downarrow">&#8595;</span>
                 <a href="/">View Case Study</a>
                 <img src="images/hcmockup.png" alt="Happy Carrot Mockup"/>
               </div>
@@ -66,6 +74,7 @@
             <a href="https://github.com/kaibrx" target="_blank">GitHub</a>
           </li>
         </ul>
+        <p>Copyright ©2019</p>
       </footer>
     </main>
     <!-- Global site tag (gtag.js) - Google Analytics -->
