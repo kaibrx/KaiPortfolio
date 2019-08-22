@@ -590,7 +590,7 @@ footer p {
   margin: auto;
   padding: 20px;
   text-align: center;
-  width: 75%;
+  width: 30%;
 }
 
 .background {
@@ -1028,7 +1028,7 @@ input, textarea {
   #menuToggle {
   	display: block;
   	position: absolute;
-  	top: 50px;
+  	top: 70px;
   	right: 50px;
   	z-index: 1;
   	-webkit-user-select: none;
@@ -1088,20 +1088,17 @@ input, textarea {
   }
 
   #menu {
-  	position: absolute;
-  	width: 300px;
-  	margin: -100px 0 0 0;
-  	padding: 50px;
-  	padding-top: 125px;
-  	right: -100px;
-  	background: #ededed;
-  	list-style-type: none;
-  	-webkit-font-smoothing: antialiased;
-  	transform-origin: 0% 0%;
-  	transform: translate(100%, 0);
-
-  	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  }
+    position: absolute;
+    width: 200px;
+    padding: 50px;
+    right: -50px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
 
   #menu li {
   	padding: 10px 0;
@@ -1215,6 +1212,7 @@ input, textarea {
   }
 
   h4 {
+    padding-top: 30px;
     text-align: center;
     width: 90%;
   }
@@ -1225,8 +1223,7 @@ input, textarea {
 
   .projectheader img {
     display: block;
-    max-height: 100%;
-    margin: auto;
+    height: 40%;
     padding-top: 20px;
   }
 
@@ -1276,8 +1273,12 @@ input, textarea {
     width: 60%;
   }
 
-  .centercard p, .prototypes p, .intro p, .centercard img, .rightside p {
+  .centercard p, .prototypes p, .intro p, .rightside p {
     width: 80%;
+  }
+
+  .centercard img {
+    width: 60%;
   }
 
   .prototypes img {
@@ -1324,12 +1325,10 @@ input, textarea {
       height: 30px;
     }
 
-    .homepage header {
-      width: 100%;
-    }
+/*hamburger*/
 
-    nav {
-      width: 100%:
+    #menu {
+    overflow: hidden;
     }
 
     nav ul {
@@ -1395,7 +1394,6 @@ input, textarea {
     /*PROJECT*/
     .projectheader img {
       height: 60%;
-      margin: auto;
       padding-top: 20px;
     }
 
