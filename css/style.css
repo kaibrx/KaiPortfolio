@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
 /*all pages*/
 html {
   font-family: 'Lato', sans-serif;
@@ -1093,6 +1097,7 @@ input, textarea {
     padding: 50px;
     right: -50px;
     background: #ededed;
+    overflow-x: hidden;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -1328,7 +1333,7 @@ input, textarea {
 /*hamburger*/
 
     #menu {
-    overflow: hidden;
+    overflow-x: hidden;
     }
 
     nav ul {
