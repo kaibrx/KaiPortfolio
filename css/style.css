@@ -349,10 +349,6 @@ footer p {
   width: 50%;
 }
 
-. {
-  text-align: center;
-}
-
 .projectbackground {
   background: #F0F7FA;
   height: 650px;
@@ -998,6 +994,10 @@ input, textarea {
 
 /* tablet in between */
 @media only screen and (min-width: 768px) and (max-width: 1281px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .card2 img {
     height: 300px;
     margin-top: 60px;
@@ -1006,6 +1006,10 @@ input, textarea {
 
 /* tablet */
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .main-container {
     width: 90%;
   }
@@ -1016,7 +1020,7 @@ input, textarea {
   	padding: 0;
   	background: #efefef;
   	color: #333333;
-  	overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   a {
@@ -1097,7 +1101,6 @@ input, textarea {
     padding: 50px;
     right: -50px;
     background: #ededed;
-    overflow-x: hidden;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -1321,7 +1324,9 @@ input, textarea {
 
 /*mobile*/
 @media only screen and (min-width: 320px) and (max-width: 415px){
-
+  body {
+    overflow-x: hidden;
+  }
     .main-container {
       width: 90%;
     }
@@ -1331,10 +1336,6 @@ input, textarea {
     }
 
 /*hamburger*/
-
-    #menu {
-    overflow-x: hidden;
-    }
 
     nav ul {
       font-size: 12px;
@@ -1528,8 +1529,19 @@ input, textarea {
   }
 
   @media only screen and (max-width: 415px) {
+    body {
+      overflow-x: hidden;
+    }
+
       .contactbox {
         width: 300px;
       }
     }
+
+  @media only screen and (min-width: 415px) and (max-width:768) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+
 }
