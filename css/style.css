@@ -29,6 +29,7 @@ main, .container {
 }
 
 .main-container {
+  position: relative;
   margin: auto;
   width: 80%;
 }
@@ -994,9 +995,6 @@ input, textarea {
 
 /* tablet in between */
 @media only screen and (min-width: 768px) and (max-width: 1281px) {
-  body {
-    overflow-x: hidden;
-  }
 
   .card2 img {
     height: 300px;
@@ -1006,15 +1004,15 @@ input, textarea {
 
 /* tablet */
 @media only screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
 
   .main-container {
+    position: relative;
     width: 90%;
   }
 
   /* Hamburger Menu */
+
+
   nav body {
   	margin: 0;
   	padding: 0;
@@ -1023,13 +1021,13 @@ input, textarea {
     overflow-x: hidden;
   }
 
-  a {
+  nav a {
   	text-decoration: none !important;
   	color: #232323;
   	transition: color 0.3s ease;
   }
 
-  a:hover {
+  nav a:hover {
   	text-decoration: line-through;
   }
 
@@ -1096,7 +1094,7 @@ input, textarea {
   }
 
   #menu {
-    position: absolute;
+    position: fixed;
     width: 200px;
     padding: 50px;
     right: -50px;
@@ -1108,6 +1106,7 @@ input, textarea {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
+
   #menu li {
   	padding: 10px 0;
   	font-size: 18px;
@@ -1117,6 +1116,8 @@ input, textarea {
   	transform: scale(1.0, 1.0);
   	opacity: 1;
   }
+
+
 
 /* HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE HOMEPAGE */
   nav ul {
@@ -1324,18 +1325,8 @@ input, textarea {
 
 /*mobile*/
 @media only screen and (min-width: 320px) and (max-width: 415px){
-  body {
-    overflow-x: hidden;
-  }
-    .main-container {
-      width: 90%;
-    }
 
-    .main-container button {
-      height: 30px;
-    }
 
-/*hamburger*/
 
     nav ul {
       font-size: 12px;
@@ -1529,7 +1520,7 @@ input, textarea {
   }
 
   @media only screen and (max-width: 415px) {
-    body {
+    nav body {
       overflow-x: hidden;
     }
 
@@ -1539,7 +1530,7 @@ input, textarea {
     }
 
   @media only screen and (min-width: 415px) and (max-width:768) {
-    body {
+    nav body {
       overflow-x: hidden;
     }
   }
