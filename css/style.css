@@ -262,7 +262,7 @@ footer p {
 }
 
 .card2 {
-  background: #F7EFEC;
+  background: #fff9f4;
   float: right;
   position: relative;
   text-align: center;
@@ -325,7 +325,7 @@ footer p {
 
 /* project.html */
 
-.projectbackground p {
+.projectbackground, .hcprojectbackground p {
   color: #6F6F6F;
   font-size: 16px;
   line-height: 20px;
@@ -353,6 +353,11 @@ footer p {
 .projectbackground {
   background: #F0F7FA;
   height: 650px;
+}
+
+.projectbackground h1 {
+  color: #232323;
+  margin-bottom: 30px;
 }
 
 .projectheader {
@@ -432,22 +437,45 @@ footer p {
   text-align: justify;
 }
 
-.secondary li {
+.secondary li, .hcsecondary li {
   letter-spacing: 1px;
   line-height: 35px;
   list-style:  initial;
   list-style-position: inside;
 }
 
+
 .rightcard {
   display: inline-block;
+  padding: 20px;
   width: 40%;
+  margin-top: 40px;
 }
 
-.rightside {
-  display: inline-block;
-  padding: 20px;
+.rightside img {
+  float: right;
+  width: 50%;
 }
+
+.rightcard p {
+  padding-top: 20px;
+}
+
+.hcsecondary {
+  padding: 20px;
+  width: 60%;
+}
+
+.hcsecondary li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.hcsecondary ul {
+  padding-left: 40px;
+}
+
+
 
 .bold {
   font-weight: 600;
@@ -455,8 +483,7 @@ footer p {
 
 .leftcard {
   display: inline-block;
-  padding: 30px;
-  padding-top: 30px;
+  padding: 20px;
   text-align: left;
 }
 
@@ -543,11 +570,8 @@ footer p {
   width: 60%;
 }
 
-.centercard button, .rightside button {
-  display: block;
-}
 
-.prototypes button, .background button {
+.prototypes button, .background button, .hcprototypes button, .hcconclusion button {
   display: block;
   margin: auto;
   margin-bottom: 10px;
@@ -587,7 +611,7 @@ footer p {
 }
 
 .centercard img {
-  height: auto;
+  height: 50%;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -595,7 +619,7 @@ footer p {
 }
 
 .background {
-  background-color: #F0F7FA;
+  background-color: #f3f4f6;
   display: inline-block;
   height: auto;
   padding: 30px;
@@ -623,7 +647,7 @@ footer p {
   width: 60%;
 }
 
-.conclusion p {
+.conclusion p, .hcconclusion p {
   line-height: 20px;
   margin-top: 15px;
   text-align: justify;
@@ -681,57 +705,40 @@ input, textarea {
   margin-top: 60px;
 }
 
-/* HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML *
+/* HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML HAPPY CARROT HTML */ *
 
 .hcprojectbackground {
-  background: #F7EFEC;
+  background: #fff9f4;
   height: 650px;
 }
 
-.hcallcards h1 {
-  text-decoration: underline;
-  text-decoration-color: #ECC9BC;
+.hcprojectbackground button {
+  background-color: #ffe2de ;
+  border-color: #ffe2de;
 }
 
 .hcallcards u {
   text-decoration: underline;
-  text-decoration-color: #ECC9BC;
+  text-decoration-color: #FFDDC1;
 }
 
-}
-.projectnav, .projectheader {
- background: #F0F7FA;
+.hcprojectnav, .hcprojectheader {
+ background: #fff9f4;
 }
 
-.allcards h1 {
+.hcallcards h1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 70px;
-  margin: auto;
-  padding: 5px;
-  width: 50%;
+  font-size: 65px;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-decoration-color: 	#FFDDC1;
+  margin-bottom: 20px;
 }
 
-. {
-  text-align: center;
-}
 
-.projectbackground {
-  background: #F0F7FA;
-  height: 650px;
-}
-
-.projectheader {
-  height: 500px;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 50px;
-  position: relative;
-  width: 100%;
-}
-
-.projectheader img {
+.hcprojectheader img {
   display: block;
-  max-height: 70%;
+  width: 50%;
   margin: auto;
   padding-top: 20px;
 }
@@ -739,7 +746,13 @@ input, textarea {
 .hcallcards {
   margin: 10px auto;
   padding-top: 80px;
-  position: relative;
+  position: relative: 60px;
+  padding-bottom:
+}
+
+.hcallcards div, .allcards div {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hcallcards:after {
@@ -747,192 +760,200 @@ input, textarea {
   content:"";
 }
 
-.intro {
-  display: inline-block;
-  padding-top: 30px;
-}
-
-.intro div {
-  width: 45%;
-}
-
-.intro img {
-  display: inline-block;
-  display: table-cell;
-  float: right;
-  max-height: 450px;
-  max-width: 400px;
-  padding-top: 40px;
-  overflow: auto;
-}
-
-.secondary {
-  display: inline-block;
-  padding: 30px;
-  text-align: left;
-  width: 100%;
-}
-
-.analysis {
-  display: inline-block;
-  width: 40%;
-}
-
-.secondary img{
-  display: inline-block;
-  float: right;
-  max-height: 350px;
-  width: 350px;
-  padding-top: 150px;
-}
-
 .hcitalic {
   font-style: italic;
   font-size: 16px;
-  list-style-position:
 }
 
 .hcallcards li {
-  color: #7E7673;
-}
-
-.secondary h3 {
-  padding-bottom: 10px;
-}
-
-.secondary ul {
-  padding: 10px;
-  text-align: justify;
-}
-
-.secondary li {
-  letter-spacing: 1px;
-  line-height: 35px;
-  list-style:  initial;
-  list-style-position: inside;
-}
-
-.rightcard {
-  display: inline-block;
-  width: 40%;
-}
-
-.rightside {
-  padding-bottom: 40px;
-  padding-left: 30px;
-  padding-top: 40px;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.leftcard {
-  display: inline-block;
-  padding: 30px;
-  padding-top: 30px;
+  color: #695b4f;
+  font-weight: bold;
+  line-height: 30px;
   text-align: left;
 }
 
-.leftcard img {
-  padding-top: 10px;
-  margin: auto;
-  max-height: 800px;
-  max-width: 800px;
-}
-
-.prototypes p, .centercard p {
-  margin: auto;
-  width: 60%;
-}
-
-.prototypes button, .background button {
+.hcallcards ul {
   display: block;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
-.prototypes img {
+.hcleftcard, .hcrightcard {
   display: inline-block;
-  margin: auto;
-  max-height: 400px;
-  max-width: 400px;
-  overflow: auto;
-}
-
-.research img {
-  height: auto;
-  margin: auto;
   padding: 20px;
-  text-align: center;
-  width: 50%;
+  width: 40%;
 }
 
-.research {
+.hcrightside ul {
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.hcrightside img {
+  display: block;
   margin: auto;
-  text-align: center;
+  padding: 50px;
   width: 70%;
 }
 
-.centercard, .prototypes {
+.hcintro img {
   display: inline-block;
-  padding: 30px;
-  text-align: center;
-}
-
-.centercard, .research p {
+  float: right;
+  height: 450px;
+  max-width: 500px;
+  overflow: auto;
   padding: 20px;
 }
 
-.centercard img {
-  height: auto;
+.hcresearch {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.hcresearch img {
+  display: block;
+  margin: auto;
+  padding: 40px;
+  width: 70%;
+}
+
+.hcprototypes p, .centercard p {
+  margin: auto;
+  width: 60%;
+}
+
+.hcprototypes {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.hcprototypes img {
+  display: inline-block;
+  margin: auto;
+  max-height: 400px;
+  max-width: 400px;
+  overflow: auto;
+}
+
+.hccentercard {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.hccentercard img {
+  padding-top: 30px;
+  width: 100%;
+}
+
+
+.hcpersonagroup div {
+  border: solid .5px #C4C4C4;
+  border-radius: 4px;
   margin: auto;
   padding: 20px;
-  text-align: center;
-  width: 75%;
+  width: 400px;
 }
 
-.hcbackground {
-  background-color: #F7EFEC;
+.hcpersonagroup {
+  margin: auto;
+  width: 80%;
+}
+
+
+.hcpersona1 img, .hcpersona2 img {
+  max-width: 200px;
+}
+
+.hcpersona1 h2, .hcpersona2 h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.hcpersonagroup h3 {
+  padding: 20px;
+}
+
+.hcpersona1 h4, .hcpersona2 h4 {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.hcpersona1 h5, .hcpersona2 h5 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+
+.hcpersona1, .hcpersona2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hcpersona1 {
+  float:left;
+}
+
+.hcpersona2 {
+  float: right;
+}
+
+.hcbackground, .hcuserflows {
+  background-color: #fffaf6;
   display: inline-block;
   height: auto;
   padding: 30px;
   text-align: center;
 }
 
-.background p, h4 {
+.hcuserflows img {
+  width: 100%;
+}
+
+.hcbackground img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.hcbackground p, .hcuserflows p{
   margin: auto;
   padding-top: 10px;
   width: 60%;
 }
 
-.background img {
-  display: inline-block;
-  max-height: 400px;
-  max-width: 400px;
-  overflow: auto;
-  padding-top: 20px;
-}
-
-.conclusion {
+.hcbackground li {
+  display: block;
+  list-style: decimal;
   margin: auto;
-  padding: 20px;
-  text-align: center;
-  width: 60%;
 }
 
-.conclusion p {
-  line-height: 20px;
-  margin-top: 15px;
-  text-align: justify;
+.hcbackground ul {
+  padding-left: 40px;
+  padding-top: 20px;
+  width: 50%;
 }
 
-.conclusion img {
-  width: 100%;
+.hcconclusion p, .hcconclusion h3 {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
-*/
+.hcconclusion img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
 
 /* contact.html */
 
@@ -1203,11 +1224,11 @@ input, textarea {
     height: 550px;
   }
 
-  .allcards {
+  .allcards, .hcallcards {
     padding-top: 5px;
   }
 
-  .allcards div {
+  .allcards div, .hcallcards {
     width: 100%;
   }
 
@@ -1282,7 +1303,7 @@ input, textarea {
     width: 60%;
   }
 
-  .centercard p, .prototypes p, .intro p, .rightside p {
+  .centercard p, .prototypes p, .hcprototypes p, .intro p, .rightside p {
     width: 80%;
   }
 
@@ -1312,6 +1333,72 @@ input, textarea {
     width: 65%;
   }
 
+  /* HAPPY CARROT HAPPY CARROT HAPPY CARROT HAPPY CARROT HAPPY CARROT */
+
+  .hcprojectbackground {
+    height: 660px;
+  }
+
+  .hcprojectheader img {
+    margin-top: 50px;
+    width: 70%;
+  }
+
+  .hcintro img {
+    display: block;
+    margin-top: 10px;
+    max-width: 300px;
+    height: 350px;
+  }
+
+  .hcresearch img {
+    width: 100%;
+  }
+
+  .hcpersonagroup div {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 70%;
+  }
+
+  .hcrightcard {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .hcrightside img {
+    width: 80%;
+  }
+
+  .hcuserflows img {
+    width: 100%;
+  }
+
+  .hcbackground img {
+    width: 70%;
+  }
+
+  .hcbackground p {
+    width: 70%;
+  }
+
+
+  .hcconclusion p {
+    width: 55%;
+  }
+
+  .hcbackground ul {
+    width: 60%;
+  }
+
+  .hcconclusion img {
+    width: 100%;
+  }
+
   /* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
 
   .contactbox {
@@ -1325,8 +1412,6 @@ input, textarea {
 
 /*mobile*/
 @media only screen and (min-width: 320px) and (max-width: 415px){
-
-
 
     nav ul {
       font-size: 12px;
@@ -1387,11 +1472,10 @@ input, textarea {
     }
 
 
-
     /*PROJECT*/
-    .projectheader img {
+    .projectheader img, .hcprojectheader img {
+      margin: auto;
       height: 60%;
-      padding-top: 20px;
     }
 
     .projectbackground {
@@ -1415,9 +1499,10 @@ input, textarea {
       text-align: center;
     }
 
-    .allcards p {
+    .allcards p, .hcallcards p {
       font-size: 15px;
       line-height: 22px;
+      padding-top: 10px;
       text-align: left;
       width: 100%;
     }
@@ -1425,25 +1510,21 @@ input, textarea {
     .allcards li {
       font-size: 16px;
       line-height: 20px;
+
       text-align: left;
       list-style: initial;
       list-style-position: inside;
     }
 
-    .allcards ul {
+    .allcards ul, .hcallcards ul {
       width: 100%;
     }
 
-    .intro div {
+    .allcards div {
       width: 100%;
     }
 
-
-    .leftcard {
-      width: 100%;
-    }
-
-    .leftcard img {
+    .leftcard img, .seondary ul, .centercard img, .prototypes img, .hcprototypes img, .background img, .secondary img {
       width: 100%;
     }
 
@@ -1459,11 +1540,7 @@ input, textarea {
       width: 250px;
     }
 
-    .secondary ul {
-      width: 100%;
-    }
-
-    .secondary li {
+    .secondary li, .hcanalysis li {
       line-height: 30px;
       font-size: 16px;
       font-weight: bold;
@@ -1475,9 +1552,6 @@ input, textarea {
       margin: auto;
     }
 
-    .centercard img, .prototypes img, .background img, .secondary img {
-      width: 100%;
-    }
 
     /*ABOUT*/
 
@@ -1503,6 +1577,73 @@ input, textarea {
     .bio {
       margin: auto;
       padding: 20px;
+      width: 100%;
+    }
+
+    /*  happy carrot */
+
+    .hcallcards div {
+      width: 100%;
+    }
+
+
+    .hcprojectbackground{
+      height: 300px;
+    }
+
+    .hcintro img {
+      max-height: 240px;
+      max-width: 200px;
+      float: none;
+      display: inline-block;
+      margin: auto;
+    }
+
+    .hcresearch p, .hcsecondary p {
+      margin: auto;
+      width: 80%;
+    }
+
+    .hcbackground p {
+      width: 90%;
+    }
+
+    .hcbackground img {
+      width: 100%;
+    }
+
+    .hcprototypes img {
+      max-width: 200px;
+    }
+
+    .hcrightside img {
+      padding: 10px;
+      width: 100%;
+    }
+
+    .hccentercard p {
+      margin: auto;
+      width: 75%;
+      text-align: justify;
+    }
+
+    .hccentercard h3 {
+      text-align: center;
+    }
+
+    .hcbackground ul {
+
+      width: 100%;
+    }
+
+    .hcconclusion p {
+      width: 80%;
+    }
+
+    .hcuserflows img {
+      height: 100%;
+    }
+    .hcconclusion img {
       width: 100%;
     }
 
